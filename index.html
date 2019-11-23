@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Book</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+
+<div id="content">
+
+<form class="add-form" action="" onsubmit="return false" method="post">
+
+    <div style="padding-bottom: 5px">
+        <input type="text" id="search" placeholder="Search">
+        <label for="search">&#128270;</label>
+    </div>
+    <table id="phoneBookItem">
+        <thead>
+        <tr>
+            ><th>firstName</th>
+            ><th>lastName</th>
+            ><th>phoneNumber</th>
+            ><th>country</th>
+            ><th>city</th>
+        <tbody>
+        <tr>
+            <td>Mihai</td>
+            <td>Eminescu</td>
+            <td>+40745922589</td>
+            <td>Romania</td>
+            <td>Bucuresti</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td><input type="text" required name="firstName" placeholder="Enter first name"></td>
+            <td><input type="text" name="lastName" placeholder="Enter last name"></td>
+            <td><input type="text" required name="phoneNumber" placeholder="Enter phone"></td>
+            <td><input type="text" required name="country" placeholder="Enter country"></td>
+            <td><input type="text" required name="city" placeholder="Enter city"></td>
+            <td><button type="submit">Save</button></td>
+        </tr>
+        </tfoot>
+    </table>
+</form>
+</div>
+
+</body>
+</html>

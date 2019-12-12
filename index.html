@@ -10,42 +10,51 @@
 
 <div id="content">
 
-<form class="add-form" action="" onsubmit="return false" method="post">
+    <h1 align="center">Phone Book</h1>
 
-    <div style="padding-bottom: 5px">
-        <input type="text" id="search" placeholder="Search">
-        <label for="search">&#128270;</label>
-    </div>
-    <table id="phoneBookItem">
-        <thead>
-        <tr>
-            ><th>firstName</th>
-            ><th>lastName</th>
-            ><th>phoneNumber</th>
-            ><th>country</th>
-            ><th>city</th>
-        <tbody>
-        <tr>
-            <td>Mihai</td>
-            <td>Eminescu</td>
-            <td>+40745922589</td>
-            <td>Romania</td>
-            <td>Bucuresti</td>
-        </tr>
-        </tbody>
-        <tfoot>
-        <tr>
-            <td><input type="text" required name="firstName" placeholder="Enter first name"></td>
-            <td><input type="text" name="lastName" placeholder="Enter last name"></td>
-            <td><input type="text" required name="phoneNumber" placeholder="Enter phone"></td>
-            <td><input type="text" required name="country" placeholder="Enter country"></td>
-            <td><input type="text" required name="city" placeholder="Enter city"></td>
-            <td><button type="submit">Save</button></td>
-        </tr>
-        </tfoot>
-    </table>
-</form>
+    <form class="add-form" action="" onsubmit="return false" method="post">
+
+        <div style="padding-bottom: 5px">
+            <input type="text" id="search" placeholder="Search">
+            <label for="search">&#128270;</label>
+        </div>
+        <table id="phoneBookItem">
+            <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone Number</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>E-mail</th>
+            <tbody>
+            <tr>
+                <td>Mihai</td>
+                <td>Eminescu</td>
+                <td>+40745922589</td>
+                <td>Romania</td>
+                <td>Bucuresti</td>
+                <td>mihaithepoet@yahoo.com</td>
+                <td> <button type="reset">Delete</button></td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td><input type="text" required name="firstName" placeholder="Enter first name"></td>
+                <td><input type="text" name="lastName" placeholder="Enter last name"></td>
+                <td><input type="text" required name="phoneNumber" placeholder="Enter phone"></td>
+                <td><input type="text" required name="country" placeholder="Enter country"></td>
+                <td><input type="text" required name="city" placeholder="Enter city"></td>
+                <td><input type="text" required name="email" placeholder="Enter e-mail"></td>
+                <td>
+                    <button type="submit">Save</button>
+                </td>
+            </tr>
+            </tfoot>
+        </table>
+    </form>
 </div>
-
+<script src="js/lib/jquery-3.4.1.min.js"></script>
+<script src="js/phoneBook.js"></script>
 </body>
 </html>

@@ -12,11 +12,13 @@
 
     <h1 align="center">Phone Book</h1>
 
-    <form class="add-form" action="" onsubmit="return false" method="post">
+    <form id="create-item" class="add-form" action="" onsubmit="return true" method="post">
 
         <div style="padding-bottom: 5px">
             <input type="text" id="search" placeholder="Search">
-            <label for="search">&#128270;</label>
+            <label>
+                <button class="search">&#128270;</button>
+            </label>
         </div>
         <table id="phoneBookItem">
             <thead>
@@ -27,6 +29,20 @@
                 <th>Country</th>
                 <th>City</th>
                 <th>E-mail</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="firstN" required name="firstName" placeholder="Enter First Name"></td>
+                <td><input type="text" id="lastN" name="lastName" placeholder="Enter Last Name"></td>
+                <td><input type="text" id="phoneN" required name="phoneNumber" placeholder="Enter Phone"></td>
+                <td><input type="text" id="countryN" required name="country" placeholder="Enter Country"></td>
+                <td><input type="text" id="cityN" required name="city" placeholder="Enter City"></td>
+                <td><input type="text" id="emailA" required name="email" placeholder="Enter E-mail"></td>
+                <td>
+                    <button type="submit" id="save-form">Save</button>
+                </td>
+            </tr>
+            </thead>
             <tbody>
             <tr>
                 <td>Mihai</td>
@@ -35,22 +51,15 @@
                 <td>Romania</td>
                 <td>Bucuresti</td>
                 <td>mihaithepoet@yahoo.com</td>
-                <td> <button type="reset">Delete</button></td>
+                <td>
+                    <button type="reset" class="delete-contact">Delete</button>
+                </td>
+                <td>
+                    <button type="reset" class="update-contact">Update</button>
+                </td>
+
             </tr>
             </tbody>
-            <tfoot>
-            <tr>
-                <td><input type="text" required name="firstName" placeholder="Enter first name"></td>
-                <td><input type="text" name="lastName" placeholder="Enter last name"></td>
-                <td><input type="text" required name="phoneNumber" placeholder="Enter phone"></td>
-                <td><input type="text" required name="country" placeholder="Enter country"></td>
-                <td><input type="text" required name="city" placeholder="Enter city"></td>
-                <td><input type="text" required name="email" placeholder="Enter e-mail"></td>
-                <td>
-                    <button type="submit">Save</button>
-                </td>
-            </tr>
-            </tfoot>
         </table>
     </form>
 </div>
